@@ -32,7 +32,7 @@ device.RenderState.Lighting = false;
 vertex[0] = new CustomVertex.PositionTextured(new Vector3(0, 0, 0), 0, 0);
 vertex[1] = new CustomVertex.PositionTextured(new Vector3(5, 0, 0), 0, 1);
 vertex[2] = new CustomVertex.PositionTextured(new Vector3(0, 5, 0), -1, 1);
-texture = new Texture(device, new Bitmap("C:\\Users\\Student\\Desktop\\TYCS_523_gp_Prctical\\images.jpg"), 0, Pool.Managed);
+texture = new Texture(device, new Bitmap("E:\\img1.jpeg"), 0, Pool.Managed);
 }
 private void Form1_Paint(object sender, PaintEventArgs e)
 {
