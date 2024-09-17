@@ -28,18 +28,16 @@ private void Render()
 {
 CustomVertex.TransformedColored[] vertexes = new
 CustomVertex.TransformedColored[3];
-vertexes[0].Position = new Vector4(240, 110, 0, 1.0f); //first point
+vertexes[0].Position = new Vector4(240, 110, 0, 1.0f); 
 vertexes[0].Color = System.Drawing.Color.FromArgb( 0, 0, 255).ToArgb();
-vertexes[1].Position = new Vector4(380, 420, 0, 1.0f); //second point
+vertexes[1].Position = new Vector4(380, 420, 0, 1.0f); 
 vertexes[1].Color = System.Drawing.Color.FromArgb(0, 255, 0).ToArgb();
-vertexes[2].Position = new Vector4(110, 420, 0, 1.0f); //third point
+vertexes[2].Position = new Vector4(110, 420, 0, 1.0f);
 vertexes[2].Color = System.Drawing.Color.FromArgb(255, 0, 0).ToArgb();
 device.Clear(ClearFlags.Target, Color.CornflowerBlue, 1.0f, 0);
 device.BeginScene();
-device.VertexFormat = CustomVertex.TransformedColored.Format; //connect screen
-with object
-device.DrawUserPrimitives(PrimitiveType.TriangleList, 1, vertexes); //to draw the
-object on screen
+device.VertexFormat = CustomVertex.TransformedColored.Format;
+device.DrawUserPrimitives(PrimitiveType.TriangleList, 1, vertexes);
 device.EndScene();
 device.Present();
 }
